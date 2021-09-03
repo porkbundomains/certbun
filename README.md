@@ -15,7 +15,7 @@ We recommend [manually downloading the certificate bundle](https://kb.porkbun.co
  5. Configure the config file's **domain**
 field with the domain you wish to pull certs from.
 6. Configure the config file's  **domainCertLocation**, **privateKeyLocation**, **intermediateCertLocation**, and **publicKeyLocation** fields with where you want the retrieved certificates to be saved. If your web server doesn't need the intermediate cert and public key, you can specify /dev/null as the filename.
-7. Configure the config file's **commandToReloadWebserver** field with the command you typically execute to get your web server to load the new certificate bundle. I usually use `service reload nginx` on Amazon Linux VPS instances I administer, but the command will vary depending on your web server and operating system.
+7. Configure the config file's **commandToReloadWebserver** field with the command you typically execute to get your web server to load the new certificate bundle. I usually use `service nginx reload` on Amazon Linux VPS instances I administer, but the command will vary depending on your web server and operating system.
 
 
 ## Running the client
