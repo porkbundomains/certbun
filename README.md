@@ -30,7 +30,7 @@ Since this client works in a fairly non-sophisticated way, you probably just wan
 
 Edit your crontab with:
 
-		crontab -e
+	crontab -e
 
 If you've never done this before, you may want to read a guide on how to do it. 
 
