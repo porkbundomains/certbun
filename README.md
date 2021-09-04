@@ -34,6 +34,6 @@ Edit your crontab with:
 
 If you've never done this before, you may want to read a guide on how to do it. 
 
-Assuming you wanted certbun to run once per week, you'd do something like:
+Assuming you wanted certbun to run once per week, you'd add a line like:
 
 	23 1 * * 1 python /path/to/certbun.py /path/to/config.json | logger
