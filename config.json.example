@@ -6,5 +6,5 @@
   "privateKeyLocation": "/my/web/server/certs/folder/private.key.pem",
   "intermediateCertLocation": "/my/web/server/certs/folder/intermediate.cert.pem",
   "publicKeyLocation": "/my/web/server/certs/folder/public.key.pem",
-  "commandToReloadWebserver": "service nginx reload"
+  "commandToReloadWebserver": "/sbin/service nginx reload"
 }

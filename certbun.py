@@ -38,8 +38,8 @@ if len(sys.argv)>1: #at least the config and root domain is specified
 	
 	print("\nExecuting system command:\n" + apiConfig["commandToReloadWebserver"] + "\n")
 		
-	os.system(apiConfig["commandToReloadWebserver"])
-	print("\n")
+	commandOutput=os.popen(apiConfig["commandToReloadWebserver"]).read()		
+	print(commandOutput + "\n")	
 	
 else:
 	print("certbun, a simpler way to keep your web server's SSL certificates current.\n\nError: not enough arguments. Example:\npython certbun.py /path/to/config.json \n\nThe config file contains your Porkbun API keys as well as the \ndomain in question, the location on your file system to copy\nthe keys, and the command to restart/reload the web server.\n")
