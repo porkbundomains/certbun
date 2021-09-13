@@ -6,7 +6,8 @@ import os
 def getSSL(domain): #grab all the records so we know which ones to delete to make room for our record. Also checks to make sure we've got the right domain
 	allRecords=json.loads(requests.post(apiConfig["endpoint"] + '/ssl/retrieve/' + domain, data = json.dumps(apiConfig)).text)
 	if allRecords["status"]=="ERROR":
-		print('Error getting domain. Check to make sure you specified the correct domain, and that API access has been switched on for this domain.');
+		print('Error retrieving SSL.');
+		print(allRecords["message"]);
 		sys.exit();
 	return(allRecords)
 
