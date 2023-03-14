@@ -1,4 +1,6 @@
-# certbun
+# certbun [Deprecated]
+
+Please note, this module is now in deprecated status. It is provided as-is as an example of how to use the Porkbun API to download and install a SSL certificate, but is no longer maintained.
 
 Porkbun's minimalist Certbot alternative leaves the certificate generation to Porkbun and simply downloads certs to the location of your choosing, then reloads your web server with the command of your choosing.
 
